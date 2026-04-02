@@ -18,22 +18,22 @@
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        h1 { color: #1a73e8; }
+        h1 { color: #d32f2f; }
         .steps {
-            background-color: #e8f0fe;
+            background-color: #ffebee;
             padding: 20px;
             border-radius: 8px;
             margin: 20px 0;
         }
-        .email { 
-            background-color: #f0f0f0;
-            padding: 10px;
-            font-family: monospace;
-            font-size: 16px;
-            text-align: center;
+        .important {
+            background-color: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ff9800;
+            margin: 20px 0;
         }
         button {
-            background-color: #1a73e8;
+            background-color: #d32f2f;
             color: white;
             padding: 12px 24px;
             border: none;
@@ -41,47 +41,63 @@
             cursor: pointer;
             font-size: 16px;
         }
-        button:hover { background-color: #1557b0; }
-        .note { color: #666; font-size: 14px; margin-top: 20px; }
+        button:hover { background-color: #b71c1c; }
+        .note { 
+            color: #666; 
+            font-size: 14px; 
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+        .email {
+            font-family: monospace;
+            font-size: 16px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🗑️ RAI - Delete Account</h1>
+        <h1>🗑️ RAI - Delete Account Request</h1>
         
-        <p>To delete your RAI account and all associated data, follow these instructions:</p>
-        
-        <div class="steps">
-            <h3>📧 By Email:</h3>
-            <ol>
-                <li>Send an email to: <strong>receiptai25@gmail.com</strong></li>
-                <li>Subject: <strong>"RAI ACCOUNT DELETION"</strong></li>
-                <li>Include in your email:<br>
-                    - Your email address used in the app<br>
-                    - Your authentication method (Google / Email)<br>
-                    - Your Firebase user ID (if possible)
-                </li>
-            </ol>
+        <div class="important">
+            <strong>⚠️ IMPORTANT INFORMATION</strong><br><br>
+            RAI stores ALL your receipts, expenses, and reminders <strong>locally on your device only</strong>.<br>
+            As the app developer, I do NOT have access to your personal financial data.<br><br>
+            <strong>To delete your local data:</strong> Simply uninstall the app from your device.<br>
+            All receipts and expenses will be permanently removed from your phone.
         </div>
         
-        <p>Or click below to send an email directly:</p>
-        <a href="mailto:receiptai25@gmail.com?subject=RAI%20ACCOUNT%20DELETION&body=Hello,%0A%0AI would like to delete my RAI account.%0A%0AMy email: %0AMy authentication method: %0A%0AThank you">
-            <button>📧 Send Deletion Email</button>
+        <p>If you created an account (email sign-up or Google sign-in), I can delete your account information from my authentication system.</p>
+        
+        <div class="steps">
+            <h3>📧 What I can delete:</h3>
+            <ul>
+                <li>✅ Your Firebase authentication account (email and name)</li>
+                <li>✅ Your email from my marketing list (if you subscribed)</li>
+            </ul>
+            
+            <h3>❌ What I CANNOT delete:</h3>
+            <ul>
+                <li>❌ Your receipts and expenses (they are on YOUR device only)</li>
+                <li>❌ Your fixed expenses (on YOUR device only)</li>
+                <li>❌ Your reminders (on YOUR device only)</li>
+            </ul>
+        </div>
+        
+        <p>To request account deletion from my system, send an email to:</p>
+        <p class="email">receiptai25@gmail.com</p>
+        <p><strong>Subject:</strong> DELETE MY RAI ACCOUNT</p>
+        <p><strong>Please include:</strong> The email address you used to sign up</p>
+        
+        <a href="mailto:receiptai25@gmail.com?subject=DELETE%20MY%20RAI%20ACCOUNT&body=Hello,%0A%0APlease%20delete%20my%20RAI%20account.%0A%0AMy%20email%3A%20%0A%0AThank%20you.">
+            <button>📧 Send Deletion Request</button>
         </a>
         
         <div class="note">
-            <strong>ℹ️ What data will be deleted?</strong><br>
-            • All receipts and expenses<br>
-            • Fixed expenses<br>
-            • Reminders<br>
-            • User preferences<br>
-            • Your Firebase account will be disabled<br><br>
-            
-            <strong>⏱️ Timeline:</strong> Deletion will be completed within 7 business days.<br><br>
-            
-            <strong>🔒 Data retention:</strong> No data is kept after deletion.<br><br>
-            
-            <strong>📱 Note:</strong> If you used the app as a guest (without account), uninstalling the app deletes all data.
+            <strong>📱 To delete ALL your data immediately:</strong><br>
+            Uninstall the RAI app from your device. This will permanently remove all receipts, expenses, and reminders from your phone.
         </div>
     </div>
 </body>
